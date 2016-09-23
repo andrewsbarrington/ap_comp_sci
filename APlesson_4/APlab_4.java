@@ -55,7 +55,7 @@ public class APlab_4
 		xyz.format("total:", total);
 		
 		System.out.println("\n______________________________________");
-		
+		System.out.println("* thank you for your service *")
 	}
 	public void format(String word, double number)
 	{

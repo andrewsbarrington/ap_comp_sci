@@ -32,7 +32,7 @@ public class ex_2
 		form.format(word1, info1);
 		form.format(word2, info2);
 		form.format(word3, info3);
-		System.out.println("\n********************************");
+		System.out.println("********************************");
 		
 		
 		
@@ -41,7 +41,7 @@ public class ex_2
 	
 	public void format(String word, String info)
 	{
-		System.out.printf("\n*%10s       %10s*", word, info);
+		System.out.printf("*%10s       %10s*\n", word, info);
 		
 	}
 	
