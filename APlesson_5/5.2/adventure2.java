@@ -6,6 +6,7 @@ public class adventure2
 	public static void main(String[]args)
 	{
 		kb = new Scanner(System.in);
+		System.out.prinln("you wake up in a dark room you dont know where you are and you dont remember anything. you can only make out two paths");
 		System.out.println("please choose a path, A, B,");
 		String choice1 = kb.next();
 		if (choice1.equals("A") || choice1.equals("B"))
@@ -17,6 +18,7 @@ public class adventure2
 			else
 			{
 				System.out.println("you made it ot the next room");
+				System.out.prinln("in the darkness you can make out two levers in the wall. you can here shaking and rumbling you need to get out quikly.");
 				System.out.println("you now must choose between two levers");
 				int choice2 = kb.nextInt();
 				if (choice2 == 1 || choice2 == 2)
@@ -24,6 +26,7 @@ public class adventure2
 					if (choice2 == 1)
 					{
 						System.out.println("you chose the right lever");
+						System.out.prinln("you come to another choice of two paths. down the left path you see light and fell a sense of freedom.");
 						System.out.println("your now must choose between the right or left path");
 						String choice3 = kb.next();
 						if (choice3.equals("right") || choice3.equals("left"))
@@ -57,6 +60,8 @@ public class adventure2
 		else
 		{
 			System.out.println("please choose A or B");
+			main();
+			
 		}
 	}
 }
