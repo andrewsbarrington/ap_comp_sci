@@ -12,7 +12,7 @@ public class table
 		for(double i = 1; i <= table; i++)
 		{
 			double x = i*in;
-			System.out.printf("%.3f....%.3f\n",i,x);
+			System.out.printf("%.3f | %.3f\n",i,x);
 		}
 	}
 }
