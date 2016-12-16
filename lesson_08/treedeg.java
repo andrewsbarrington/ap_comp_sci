@@ -16,7 +16,7 @@ public class treedeg
 	{
 		if (start<=stop)
 		{
-			System.out.println(num.substring(0,start));
+			System.out.printf("%10s", num.substring(0,start) + "\n");
 			start+=1;
 			replace(num, stop, start);
 			
