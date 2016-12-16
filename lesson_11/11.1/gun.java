@@ -12,11 +12,16 @@ public class gun
 		{
 			System.out.println("action?");
 			String in = kb.next();
-			if(in =="r")
+			for(int i = 0; i < 16; i++)
+			{
+				clip[i] = "*";
+			}
+			
+			if(in.equals("r"))
 			{
 				reload();
 			}
-			else if(in == "s")
+			else if(in.equals("s"))
 			{
 				System.out.println(shoot());
 			}
@@ -25,7 +30,7 @@ public class gun
 	}
 	public static void reset()
 	{
-		for(int i = 0; i<clipsize; i++)
+		for(int i = clipsize; i>0; i++)
 		{
 			clip[i] = "[]";
 		}
@@ -36,7 +41,13 @@ public class gun
 		{
 			clip[shotcount-1] = "[]";
 			shotcount--;
+			bulletcount--;
 			return "boom";
+		}
+		else if (shotcount == 0)
+		{
+			reload();
+			return "reload";
 		}
 		else
 		{
@@ -60,7 +71,7 @@ public class gun
 		reset();
 		for(int i = 0; i<shotcount;i++)
 		{
-			clip;
+			clip[i] = "[]";
 		}
 	}
 	public static void printclip()
