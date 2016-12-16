@@ -9,7 +9,7 @@ public class biggest
 	
 		fillarray();
 		printarray();
-		getodds();
+		System.out.println(getodds());
 		
 		
 	}
@@ -28,19 +28,19 @@ public class biggest
 			System.out.print(x + " ");
 		}
 	}
-	public static void getodds()
+	public static int getodds()
 	{
-		int max = 50;
+		int max = 0;
 		System.out.println("\nbiggest numebrs::  ");
 		for(int v:num)
 		{
-			if(v => max)
+			if(v > max)
 			{
 			
-				System.out.print(v + " ");
+				max = v;
 			}
 			
 		}
-	
+	return max;
 	}
 }

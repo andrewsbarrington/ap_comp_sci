@@ -9,8 +9,8 @@ public class factorial
 		int factorial = 1;
 		for(int i = 1; i <= in; i++)
 		{
-			double out = factorial*i;
-			System.out.println(out);
+			factorial *= i;
 		}
+		System.out.println("!5 is " + factorial);
 	}
 }

@@ -38,7 +38,7 @@ public class findz
 		{
 			if(v.indexOf("z") >= 0 || v.indexOf("Z") >= 0)
 			{
-			z = z+v + " ";
+				z = z+v + " ";
 			}
 			
 		}

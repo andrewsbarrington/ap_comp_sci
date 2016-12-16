@@ -6,7 +6,7 @@ public class average
 	{
 		Scanner kb = new Scanner(System.in);
 		int[] words = new int[10];
-		System.out.println("please enter five wrods");
+		
 		for(int i = 0; i < 10; i++)
 		{
 			words[i] = (int)(Math.random()*100);

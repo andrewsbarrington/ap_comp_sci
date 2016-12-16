@@ -8,7 +8,7 @@ public class replace
 	{
 		Scanner kb = new Scanner(System.in);
 		System.out.println("please enter a sentence");
-		word = kb.next();
+		word = kb.nextLine();
 		replace();
 		
 	
