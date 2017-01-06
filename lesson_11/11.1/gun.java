@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 public class gun 
 {
 	static int bulletcount = 96;
@@ -12,10 +12,15 @@ public class gun
 		{
 			System.out.println("action?");
 			String in = kb.next();
-			for(int i = 0; i < 16; i++)
+			for(int i = 0; i < shotcount; i++)
 			{
 				clip[i] = "*";
+			
+
 			}
+			
+			//System.out.print(Arrays.toString(clip));
+			
 			
 			if(in.equals("r"))
 			{
@@ -25,14 +30,14 @@ public class gun
 			{
 				System.out.println(shoot());
 			}
-			printclip();
+		printclip();
 		}
 	}
 	public static void reset()
 	{
-		for(int i = clipsize; i>0; i++)
+		for(int i = 0; i < 16; i++)
 		{
-			clip[i] = "[]";
+			clip[i] = "*";
 		}
 	}
 	public static String shoot()
@@ -60,8 +65,12 @@ public class gun
 	{
 		if(bulletcount >= clipsize)
 		{
-			clipsize = clipsize - bulletcount;
+			bulletcount = bulletcount - clipsize;
 			shotcount = clipsize;
+		/* 	for(int i = 0; i<shotcount;i++)
+		{
+			clip[i] = "[]";
+		}  */
 		}
 		else
 		{
@@ -69,19 +78,16 @@ public class gun
 			bulletcount = 0;
 		}
 		reset();
-		for(int i = 0; i<shotcount;i++)
-		{
-			clip[i] = "[]";
-		}
+		
 	}
 	public static void printclip()
 	{
 		String output= "";
-		System.out.println("bullets" + "\t" + bulletcount+ "\n" + "clip" + "\t");
+		System.out.println("bullets" + "\t" + bulletcount+  " " + shotcount + " " + clipsize + "\n"  + "clip" + "\t");
 		for(int i = 0; i<clipsize;i++)
 		{
 			output = clip[i] + output;
-			System.out.print(output);
+			System.out.print(clip[i]);
 		}
 	}
 }
