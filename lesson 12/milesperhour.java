@@ -22,7 +22,7 @@ public class milesperhour
 	{
 		mph = 0;
 	}
-	public double getmph(int d,int h, int m)
+	public double getmph()
 	{
 		mph = Math.round(d/(h+m/60));
 		return mph;
