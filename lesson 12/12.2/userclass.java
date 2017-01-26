@@ -40,16 +40,19 @@ public class userclass
 		String ln = kb.next();
 		System.out.println("do you wat a user avatar, answer with y or n");
 		String ans = kb.next();
-		user1 = new userclass();
+		
+		userclass user1;
+		
 		if(ans.equals("n"))
 		{
-			userclass user1 = new userclass(fn,ln);
+			user1 = new userclass(fn,ln);
+			
 		}
 		else
 		{
 			System.out.println("please enter an avatar name");
 			String av = kb.next();
-			userclass user1 = new userclass(fn,ln,av);
+			user1 = new userclass(fn,ln,av);
 		}
 		System.out.println(user1);
 	}

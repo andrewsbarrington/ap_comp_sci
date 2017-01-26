@@ -30,8 +30,11 @@ public class gun
 			{
 				System.out.println(shoot());
 			}
+			
+			
 		printclip();
 		}
+		System.out.println(" \n you are out of bullets");
 	}
 	public static void reset()
 	{
@@ -67,10 +70,10 @@ public class gun
 		{
 			bulletcount = bulletcount - clipsize;
 			shotcount = clipsize;
-		/* 	for(int i = 0; i<shotcount;i++)
+			for(int i = 0; i<shotcount;i++)
 		{
 			clip[i] = "[]";
-		}  */
+		} 
 		}
 		else
 		{

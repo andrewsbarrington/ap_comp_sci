@@ -40,17 +40,20 @@ public class items
 		String nm = kb.next();
 		System.out.println("will you entering catagory and price information");
 		String ans = kb.next();
-		if(ans .equals("no"));
+		
+		items IT;
+		
+		if(ans .equals("no"))
 		{
-			items item = new items(mnf,nm);
+			IT = new items(mnf,nm);
 		}
 		else
 		{
 			System.out.println("please enter catagory and price");
 			String ct = kb.next();
 			Stirng p = kb.nextInt();
-			items item = new items(mnf, nm, ct, p);
+			IT = new items(mnf, nm, ct, p);
 		}
-		System.out.pritnln(item);
+		System.out.pritnln(IT);
 	}
 }
