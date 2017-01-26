@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class items
 {
-	private String manufacurer, name catagory;
+	private String manufacurer, name, catagory;
 	private int upc,price;
 	public items()
 	{
@@ -11,13 +11,13 @@ public class items
 		upc = (int)(Math.random() *1000000000) + 1;
 		price = 0;
 	}
-	public item(String mnf, String nm)
+	public items(String mnf, String nm)
 	{
 		manufacturer = mnf;
 		name = nm;
 		upc = (int)(Math.random() *1000000000) + 1;
 	}
-	public item(String mnf, String nm, String ct, int p)
+	public items(String mnf, String nm, String ct, int p)
 	{
 		manufacturer = mnf;
 		name = nm;
@@ -29,6 +29,9 @@ public class items
 	{
 		return " item info \n" + manufacturer + " \n" + name + " \n" + catagory + " \n" + upc + "\n" + price; 
 	}
+	
+	
+	
 		public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
@@ -39,13 +42,15 @@ public class items
 		String ans = kb.next();
 		if(ans .equals("no"));
 		{
-			
+			items item = new items(mnf,nm);
 		}
 		else
 		{
 			System.out.println("please enter catagory and price");
 			String ct = kb.next();
 			Stirng p = kb.nextInt();
+			items item = new items(mnf, nm, ct, p);
 		}
+		System.out.pritnln(item);
 	}
 }

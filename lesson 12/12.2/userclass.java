@@ -29,6 +29,9 @@ public class userclass
 	{
 		return "customer info... \n first name:" +firstname + "\n lastname:" + lastname + " \n avatar" + avatar + " \n userid" + userid;
 	}
+	
+	
+	
 	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
