@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class items
 {
-	private String manufacurer, name, catagory;
+	private String manufacturer, name, catagory;
 	private int upc,price;
 	public items()
 	{
@@ -51,9 +51,9 @@ public class items
 		{
 			System.out.println("please enter catagory and price");
 			String ct = kb.next();
-			Stirng p = kb.nextInt();
+			int p = kb.nextInt();
 			IT = new items(mnf, nm, ct, p);
 		}
-		System.out.pritnln(IT);
+		System.out.println(IT);
 	}
 }

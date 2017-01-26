@@ -46,7 +46,6 @@ public class userclass
 		if(ans.equals("n"))
 		{
 			user1 = new userclass(fn,ln);
-			
 		}
 		else
 		{
