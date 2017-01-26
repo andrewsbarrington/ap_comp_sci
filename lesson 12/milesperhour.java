@@ -14,8 +14,11 @@ public class milesperhour
 		h = 0;
 		mph = 0;
 	}
-	public milesperhour(int d, int m, int h)
+	public milesperhour(int distance, int hours, int mins)
 	{
+		d = distance;
+		m = hours;
+		h = mins;
 		mph =0;
 	}
 	public void setvalues(int h, int m, int d)

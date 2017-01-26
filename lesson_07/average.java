@@ -10,10 +10,10 @@ public class average
 		Scanner kb = new Scanner(System.in);
 		System.out.println("please enter a number");
 		number = kb.nextInt();
-		
+		System.out.print("the average of the digits in " + number);
 		avdigits();
 		double average = sum/digits;
-		System.out.println("the average of the digits in " + number + " is " + average);
+		System.out.print(" is " + average + " \n");
 	}
 	public static void avdigits()
 	{

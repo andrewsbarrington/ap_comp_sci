@@ -10,7 +10,7 @@ public class mphrunner
 		int h = kb.nextInt();
 		milesperhour object = new milesperhour(d, h, m);
 		
-		System.out.println(d + " miles in " + h + " hours = " + object.getmph(d,h,m));
+		System.out.println(d + " miles in " + h + " hours = " + object.getmph());
 		System.out.println(d + " " + h + " " + m);
 		object.setvalues(d,h,m);
 		

@@ -12,8 +12,9 @@ public class reversenum
 		System.out.println("please enter a number");
 		number = kb.nextInt();
 		
+		System.out.print(number);
 		sum();
-		System.out.println(number + " reversed is " + sum);
+		System.out.println( " reversed is " + sum);
 		
 	}
 	public static void sum()

@@ -11,9 +11,9 @@ public class digitadder
 		
 		System.out.println("please enter a number");
 		number = kb.nextInt();
-		
+		System.out.print("the sum of the digits in " + number);
 		sum();
-		System.out.println("the sum of the digits in" + number + " is " + sum);
+		System.out.print( " is " + sum + " \n");
 		
 	}
 	public static void sum()

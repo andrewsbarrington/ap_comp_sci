@@ -12,17 +12,18 @@ public class reverse
 		}	
 		for(String name : kek)
 		{
-			System.out.println(name);
+			System.out.print(name + "  ");
 		}
-		System.out.println("reversed");
+		System.out.println("\n reversed");
 		
 		abcd(kek);
+		System.out.println(" ");
 	}
 	public static void abcd(String[] n)
 	{
 		for(int i = n.length - 1; i >= 0; i--)
 		{
-			System.out.println( n[i]);
+			System.out.print( n[i] + "  ");
 		}
 
 		
