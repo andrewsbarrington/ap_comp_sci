@@ -1,4 +1,4 @@
-import java.util.Scanner;
+simport java.util.Scanner;
 public class average
 {
 	static int sum;
