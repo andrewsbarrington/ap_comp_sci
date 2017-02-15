@@ -1,4 +1,4 @@
-public class consule
+public abstract class consule extends gamesystem
 {
 
 	public consule()
@@ -9,25 +9,10 @@ public class consule
 	{
 		super(p);
 	}
-	public void setplatform(String p)
+
+	public abstract String getcontroller();
+	public String toString()
 	{
-		platform = p;
-	}
-	public void set serial();
-	{
-		serial# = random 7;
-	}
-	public int serial#()
-	{
-		return Serial#;
-	}
-	public String getplatform()
-	{
-		return platform;
-	}
-	public abstract getcontroller();
-	public static toString();
-	{
-		System.out.println("platform:" + platform + " \n" +"serial#" + serial# + "serial#" + " \ncontroller" + controller);
+		return ("platform:" + super.getplatform() + " \n" +"serial#" + super.getserialn() + "serial#" + " \ncontroller" + getcontroller());
 	}
 }

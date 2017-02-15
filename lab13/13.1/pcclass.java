@@ -1,6 +1,6 @@
-public class pcclass
+public class pcclass extends gamesystem
 {
-			public pcclass()
+	public pcclass()
 	{
 		super();
 	}
@@ -8,28 +8,18 @@ public class pcclass
 	{
 		super(p);
 	}
-	public void setplatform(String p)
-	{
-		platform = p;
-	}
-	public void set serial();
-	{
-		serial# = random 7;
-	}
-	public int serial#()
-	{
-		return Serial#;
-	}
-	public String getplatform()
-	{
-		return platform;
-	}
-	public String systeminput()
+
+	public String getsysteminput()
 	{
 		return "keyboard and mouse";
 	}
-	public static toString();
+	public String getplatform()
 	{
-		System.out.println("platform:" + platform + " \n" +"serial#" + serial# + "serial#" + " \ncontroller" + controller);
+		return "PCMR";
+	}
+	
+	public String toString()
+	{
+		return ("platform:" + getplatform() + " \n" +"serial#" + super.getserialn() + "serial#" + " \ncontroller" + getsysteminput());
 	}
 }

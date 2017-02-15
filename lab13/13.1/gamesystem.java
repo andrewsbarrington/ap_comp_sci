@@ -1,29 +1,21 @@
 
-public class gamesystem
+public abstract class gamesystem
 {
-	private String platform;
-	private int serial#;
+	String platform;
+	int serialn;
 	public gamesystem()
 	{
 		platform = "";
-		serial# = 0;
+		serialn = (int)((Math.random()*10000000)+1);
 	}
 	public gamesystem(String p)
 	{
 		platform = p;
-		serial# = 0;
+		serialn = (int)((Math.random()*10000000)+1);
 	}
-	public void setplatform(String p)
+	public int getserialn()
 	{
-		platform = p;
-	}
-	public void set serial();
-	{
-		serial# = random 7;
-	}
-	public int serial#()
-	{
-		return Serial#;
+		return serialn;
 	}
 	public String getplatform()
 	{

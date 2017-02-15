@@ -1,4 +1,4 @@
-public class playstation
+public class playstation extends consule
 {
 	public playstation()
 	{
@@ -8,28 +8,13 @@ public class playstation
 	{
 		super(p);
 	}
-	public void setplatform(String p)
-	{
-		platform = p;
-	}
-	public void set serial();
-	{
-		serial# = random 7;
-	}
-	public int serial#()
-	{
-		return Serial#;
-	}
-	public String getplatform()
-	{
-		return platform;
-	}
+
 	public String getcontroller()
 	{
 		return "PS dualshock 3";
 	}
-	public static toString();
+	public String getplatform()
 	{
-		System.out.println("platform:" + platform + " \n" +"serial#" + serial# + "serial#" + " \ncontroller" + controller);
+		return "PSHIT";
 	}
 }
