@@ -13,6 +13,6 @@ public abstract class consule extends gamesystem
 	public abstract String getcontroller();
 	public String toString()
 	{
-		return ("platform:" + super.getplatform() + " \n" +"serial#" + super.getserialn() + "serial#" + " \ncontroller" + getcontroller());
+		return ("platform:" + super.getplatform() + " \n" +"serial#" + super.getserialn() + "" + " \ncontroller" + getcontroller());
 	}
 }

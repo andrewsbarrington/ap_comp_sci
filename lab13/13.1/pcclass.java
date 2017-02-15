@@ -20,6 +20,6 @@ public class pcclass extends gamesystem
 	
 	public String toString()
 	{
-		return ("platform:" + getplatform() + " \n" +"serial#" + super.getserialn() + "serial#" + " \ncontroller" + getsysteminput());
+		return ("platform:" + getplatform() + " \n" +"serial#" + super.getserialn() + "" + " \ncontroller" + getsysteminput());
 	}
 }
