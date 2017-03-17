@@ -1,27 +1,29 @@
-public class honda implements location
+public class honda extends car
 {
 	private double ex, why;
-	private ID;
+	private int ID;
 	public honda()
 	{
+		
 		ex = 0;
 		why = 0;
 	}
 	public honda(double[] l)
 	{
+		ID = (int)(Math.random()*1000000)+1;
 		ex = l[0];
 		why = l[1];
 	}
 	public int getID()
 	{
-		return (int)(Math.random()*1000000)+1;
+		return ID;
 	}
-	public static move(double x, double y)
+	public void move(double x,double y)
 	{
 		ex += x;
 		why += y;
 	}
-	public int location()
+	public double[] getLoc()
 	{
 		double[] location = new double[2];
 		location[0] = ex;
